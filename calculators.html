@@ -3,15 +3,23 @@
     <head>
         
         <title>
-           Investor Aide
+           Investor  ide
         </title>
         <link rel="icon" href="c:\Users\jackd\Downloads\DALL·E 2024-12-24 11.15.08 - A clean and modern design of a website icon representing an investing tool, featuring a stylized upward arrow graph combined with a coin or dollar sym.jpg">
         
      </head>
      <style>
         .allCalculatorsPage {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lu ida Sans', Arial, sans-serif;
         }
+        #hiddenDiv {
+            display: none;
+        }
+        #rOIHeadDiv:hover + #hiddenDiv {
+        display: block;
+        color: rgba(0, 0, 0, 0.954);
+        }
+
      </style>
     <body class="allCalculatorsPage">
         <h1>Investment Calculators</h1>
@@ -37,12 +45,18 @@
         <br>
         <h1>Stock Calculators</h1>
         <br>
-        <h2>Return on Investment Calulator</h2>
+        <div id="rOIHeadDiv">
+            <h2>Return on Investment Calulator</h2>
+        </div>
+        <div id="hiddenDiv">
+            <h5>Recieve many stats on any specific investment</h5>
+
+        </div>
         
-        <h5>Recieve many stats on any specific investment</h5>
         <hr>
         
         <div id="rOIDiv">
+
             <label for="rBuy" id="rBuyLabel">Buy Price:</label><br>
             <input type="text" id="rBuy" name="rBuy"><br><br>
             <label for="rSell" id="rSellLabel">Sell Price:</label><br>
